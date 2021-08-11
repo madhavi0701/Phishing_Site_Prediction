@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+<br><br><br><br>
+  <div class="welcome ">
+    <h2 style="color: azure;">Phishinig Site Prediction</h2>
+  </div>
+
+  <div class="userinput">
+    <h2>Enter URL </h2>
+<br>
+    <form action='/predict' method="post">
+      <div class="input">
+        <input id="url" name="z1" type="text" width="48" height="48" size="50" required><br>
+        <button class="button" type="Summarize">Predict</button>
+      </div>
+
+    </form>
+    <br>
+    <br>
+    <div id='result'>
+      {{ prediction_text }}
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
